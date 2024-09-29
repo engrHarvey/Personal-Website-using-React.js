@@ -5,6 +5,8 @@ import About from "./About";
 import Skills from "./Skills";
 import Contacts from "./Contacts";
 import Home from "./Home";
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "./App.css"; // Import custom CSS for sticky footer
 
 function App() {
   const [showContent, setShowContent] = useState("home");
@@ -26,20 +28,24 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100">
+      {/* Header Section */}
       <Header
         onHome={showHome}
         onAbout={showAbout}
         onSkills={showSkills}
         onContacts={showContacts}
       />
-      <div>
+
+      {/* Main Content Section */}
+      <main className="flex-grow-1">
         {showContent === "home" && <Home />}
         {showContent === "about" && <About />}
         {showContent === "skills" && <Skills />}
         {showContent === "contacts" && <Contacts />}
-      </div>
+      </main>
 
+      {/* Footer Section */}
       <Footer />
     </div>
   );

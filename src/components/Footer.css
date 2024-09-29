@@ -1,0 +1,22 @@
+.footer {
+  border-top: 4px solid #78ffc6; /* Custom border color for accent */
+  background: linear-gradient(135deg, #1d1d1d, #333); /* Gradient background for a modern effect */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.footer h5 {
+  font-weight: 600;
+}
+
+.footer .social-icons a {
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.footer-bottom {
+  border-top: 1px solid #444; /* Divider line between content and copyright */
+  padding-top: 10px;
+}

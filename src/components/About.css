@@ -1,0 +1,19 @@
+.avatar-img {
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.avatar-img:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  border-color: #78ffc6; /* Change border color on hover */
+}
+
+h1.text-primary {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add a slight shadow to the heading */
+}
+
+.container {
+  background-color: #ffffff; /* Set a white background */
+  padding: 30px;
+  border-radius: 10px; /* Soft rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}

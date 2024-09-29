@@ -1,0 +1,40 @@
+/* Skills Page Styles */
+.skill-card {
+  background: #ffffff; /* White background for skill cards */
+  border: 1px solid transparent;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  border: 1px solid #61f2f5; /* Border change on hover */
+}
+
+.hovered {
+  box-shadow: 0 8px 16px rgba(97, 242, 245, 0.4); /* Larger shadow on hover */
+}
+
+.skill-icon {
+  font-size: 3rem; /* Larger size for SVG icons */
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  font-weight: 600;
+}
+
+.container {
+  background-color: #f9f9f9; /* Light background for the skills section */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .skill-icon {
+    font-size: 2.5rem; /* Smaller icon size on small screens */
+  }
+
+  .skill-card {
+    padding: 2rem; /* Adjust padding on small screens */
+  }
+}
